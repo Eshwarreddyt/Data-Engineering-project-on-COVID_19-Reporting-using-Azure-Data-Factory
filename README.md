@@ -41,7 +41,7 @@
 Ingest "population by age" data for all EU Countries into the Data Lake to support the machine learning models with the data to predict an increase in Covid-19 mortality rate.
 
 ###  Overview:
-![image](https://github.com/AbdallahQoutbAli/Azure-Data-Factory-For-Data-Engineers---Project-on-Covid19/assets/47276503/50abaa2e-13aa-471c-9cfc-e36f78e4834d)
+![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/2.png )
 
 
 ### Steps: 
@@ -60,7 +60,7 @@ Ingest "population by age" data for all EU Countries into the Data Lake to suppo
  ### Pipeline Overview: 
 
 
-![image](https://github.com/AbdallahQoutbAli/Azure-Data-Factory-For-Data-Engineers---Project-on-Covid19/assets/47276503/6c17c903-8d2f-406e-9b6c-bfac9300fba5)
+![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/3.png)
 
  ### 2- ECDC Data 
  #### the ECDC Data Content - Four files of CSV : 
@@ -71,7 +71,7 @@ Ingest "population by age" data for all EU Countries into the Data Lake to suppo
 ##### 4. country_response.csv
  
 ###  Overview:
-![image](https://github.com/AbdallahQoutbAli/Azure-Data-Factory-For-Data-Engineers---Project-on-Covid19/assets/47276503/628015ca-81ce-4495-8cdf-53e983c3625b)
+![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/4.png)
 
 ### Steps: 
 #### 1. Create a Linked Service using an HTTP connector
@@ -83,11 +83,11 @@ Ingest "population by age" data for all EU Countries into the Data Lake to suppo
 #### 7. Used Schedule Trigger <br>
 
 ### Json File: 
-![image](https://github.com/AbdallahQoutbAli/Azure-Data-Factory-For-Data-Engineers---Project-on-Covid19/assets/47276503/3334e5dd-b638-4f21-af29-7170f9f35eb0)
+![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/5.png)
 
 
  ### Pipeline Overview: 
- ![image](https://github.com/AbdallahQoutbAli/Azure-Data-Factory-For-Data-Engineers---Project-on-Covid19/assets/47276503/0823f057-9f65-4c61-aed0-581a679a9d79)
+ ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/6.png)
 
 ### End Data Ingestion 
  # 2.Data Transformation 
@@ -95,12 +95,12 @@ Ingest "population by age" data for all EU Countries into the Data Lake to suppo
  ## Data Flows (1)  Cases & Deaths Data:
 
 ###  Overview: 
-![image](https://github.com/AbdallahQoutbAli/Azure-Data-Factory-For-Data-Engineers---Project-on-Covid19/assets/47276503/9d1ef49b-d2da-4424-a735-aeda963cc98c)
+![image]()
 
 ### Steps: 
 #### 1. Cases And Deaths Source (Azure Data Lake Storage Gen2 )
 #### 2. Filter Europe-Only Data 
-#### 3. Select only required columns
+#### 3. Select only the required columns
 #### 4. PivotCounts using indicator Columns(confirmed cases, deaths) and get the sum of daily cases count
 #### 5. Lookup Country to get country_code_2_digit,country_code_3_digit columns
 #### 6. Select Only the required columns for the Sink
@@ -109,12 +109,12 @@ Ingest "population by age" data for all EU Countries into the Data Lake to suppo
 
  ### Pipeline Overview: 
 
- ![image](https://github.com/AbdallahQoutbAli/Azure-Data-Factory-For-Data-Engineers---Project-on-Covid19/assets/47276503/aa9e1bcd-1dfa-4582-9f22-ac18c04f033a)
+ ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/7.png)
 
  ## Data Flows (2)  Hospital Admissions Data:
  
  ###  Overview: 
-![image](https://github.com/AbdallahQoutbAli/Azure-Data-Factory-For-Data-Engineers---Project-on-Covid19/assets/47276503/7b6b58dc-c381-4d15-89b3-afccec2e8e7a)
+![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/8.png)
 
 ### Steps: 
 #### 1. Hospital Admissions Source (Azure Data Lake Storage Gen2 )
@@ -152,14 +152,14 @@ Ingest "population by age" data for all EU Countries into the Data Lake to suppo
 
  ### Pipeline Overview: 
 
-![image](https://github.com/AbdallahQoutbAli/Azure-Data-Factory-For-Data-Engineers---Project-on-Covid19/assets/47276503/6e8008e1-5255-43d8-86b0-286826a50435)
+![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/9.png)
 
  ## Databricks Activity (3) -- Population File:
  
  ###  Overview: 
 
 
- ![image](https://github.com/AbdallahQoutbAli/Azure-Data-Factory-For-Data-Engineers---Project-on-Covid19/assets/47276503/97068206-7da2-418e-9a36-ed5a49085db4)
+ ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/10.png)
 
 Attached File: 
 pyspark_notebooks/transform_population_data.py
@@ -174,7 +174,7 @@ pyspark_notebooks/transform_population_data.py
  3- Copy testing data   <br>
 
  Sample :  
- ![image](https://github.com/AbdallahQoutbAli/Azure-Data-Factory-For-Data-Engineers---Project-on-Covid19/assets/47276503/94083675-d0ec-44f4-8e13-b6ea596cd06d)
+ ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/11.png)
 
  ### End copy data to Azure SQL
 
@@ -186,7 +186,7 @@ pyspark_notebooks/transform_population_data.py
  4- Publish the report to Power BI Server   <br>
  5- Publish to web <br>
   ### Sample :
- ![image](https://github.com/AbdallahQoutbAli/Azure-Data-Factory-For-Data-Engineers---Project-on-Covid19/assets/47276503/e1dfa823-2abb-4742-aeb0-223cb6eebb68)
+ ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/12.png)
 
  ### Dashboard Link : 
 [Power BI Dashboard Covid 19 Cases](https://app.powerbi.com/view?r=eyJrIjoiYjBhYWU0NTItMmVhOS00MGM5LTk1ZGEtMTQxZTdmZDUxMWUwIiwidCI6ImUwYjlhZTFlLWViMjYtNDZhOC1hZGYyLWQ3ZGJjZjIzNDBhOSJ9)
