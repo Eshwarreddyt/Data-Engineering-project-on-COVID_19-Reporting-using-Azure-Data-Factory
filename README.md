@@ -252,9 +252,12 @@ Attached File:
 Thanks, <br>
 Eshwar Reddy Thimmapuram <br>
 eshwart28@gmail.com
- 
-**Linkedin:** https://www.linkedin.com/in/eshwarreddyt
 </p>
+<div id="badges">
+  <a href="https://www.linkedin.com/in/eshwarreddyt">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+</div>
 
 This project allowed me to demonstrate my expertise in Azure technologies, particularly in using Azure Databricks and Data Factory to orchestrate complex data workflows. It highlights the power of Azure Databricks and Data Factory in automating the process of cleaning and storing data, which in turn saves a lot of time and effort. I am excited about the endless possibilities that Microsoft Azure offers and can't wait to explore more.
 
