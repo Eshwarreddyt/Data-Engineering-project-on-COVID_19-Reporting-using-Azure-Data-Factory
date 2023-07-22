@@ -205,9 +205,8 @@ pyspark_notebooks/transform_population_data.py
 
 
 <p> 
-Thanks <br>
+Thanks, <br>
 Eshwar Reddy Thimmapuram <br>
-
 eshwart28@gmail.com
  
 [Linkedin](https://www.linkedin.com/in/eshwarreddyt/)
