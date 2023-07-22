@@ -1,9 +1,10 @@
 
-# Azure Data Factory Project on Covid-19 Reporting:
+# ETL Azure Data Factory Project on Covid-19 Reporting:
 
-- This is a Microsoft Azure Data Engineering project on COVID-19 data collected from 2 different sources. I loaded the dataset with the help of Azure Data Factory and then performed transformations by using ADF, HDInsight, and Databricks. When the data was processed, it was then loaded into the Azure SQL database for analysis and generating reports. All of these objectives were achieved by using ADF pipelines and event-based triggers to automate the workflows.
-- I created a data platform from which our data scientists can create machine-learning models and populated the data warehouse with the subset of the data so that it can be used for reporting on trends. The data warehouse will include details about confirmed cases, unfortunate mortality rates, hospitalization and ICU cases from our weekly data lake counts, and the testing numbers. I have also built some PowerBi reports from the transformed data.
+- This project is about ingesting a couple of Covid-19 Datasets from the ECDC website, transforming them using various ADF components, and then performing transformations by using ADF, HDInsight, and Databricks, then loading them into SQL Datawarehouse for the Analytics team to derive useful and actionable insights from these datasets. We want to know the impact of Covid on the European Region as a whole during the year 2020.
 
+### Task:
+The task of this project is to ingest the data from various data sources, and clean and transform the data to make it more robust and fit for the purpose. The cleaned data should then be loaded into a central repo, like a Data warehouse or a datalake so that the analytics team can consume it with their BI tools such as Power BI. The data warehouse will include details about confirmed cases, unfortunate mortality rates, hospitalization and ICU cases from our weekly data lake counts, and the testing numbers. Also, we can run ML Models which use these data for predicting the spread of covid in the European region.
 
 ### Source Data:
 - ECDC (https://www.ecdc.europa.eu/en/covid-19) 
@@ -33,11 +34,33 @@
 
 ### All the steps performed in this project are available as images in the screenshots folder in this repository. <br>
 
+### Approach
+#### Environment Setup
+* Azure Subscription
+* Data Factory 
+* Azure Blob Storage Account
+* Data Lake Storage Gen2
+* Azure SQL Database
+* Azure Databricks Cluster
+* HD Insight Cluster
 
 # Solution Architecture Overview: 
 ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/1.png)
 
- # Data Ingestion:
+### Data Extraction/Data Ingestion
+Four different datasets were ingested from both the ECDC website and azure blob storage into Datalake Gen2.
+They are;
+* Cases and Deaths Data
+* Hospital Admissions Data
+* Population Data
+* Test Conducted Data
+
+We used various components of **ADF Pipeline** activities to ingest the data from both HTTP Data Source and Azure Storage Account to Azure DataLake. 
+Some of those activities are;
+* Validation Activity
+* Get Metadata Activity
+* Copy Activity
+
  ###  1- Population Data 
  
 Ingest "population by age" data for all EU Countries into the Data Lake to support the machine learning models with the data to predict an increase in Covid-19 mortality rate.
@@ -92,7 +115,18 @@ Ingest "population by age" data for all EU Countries into the Data Lake to suppo
  ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/6.png)
 
 ### End Data Ingestion 
- # 2.Data Transformation 
+
+# 2.Data Transformation 
+The Cases and Deaths data together with the Hospital admissions data was transformed using ADF Data flows.
+The Data Flows transformation used on both dataset include;
+* Select transformation
+* Lookup transformation
+* Filter transformation
+* Join transformation
+* Sort transformation
+* Conditional split transformation
+* Derived columns transformation
+* Sink transformation
  
  ## Data Flows (1)  Cases & Deaths Data:
 
@@ -187,9 +221,19 @@ Attached File:
  3- Identify the trends in data based on reporting date <br>
  4- Publish the report to Power BI Server   <br>
  5- Publish to web <br>
-  ### Sample :
+ 
+ ## Covid-19 Trend in the EU/EEA & UK 2020 by Cases, Deaths, Hospital Occupancy, and ICU Occupancy
  ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/13.png)
 
+ ## Covid-19 Cases and Death breakdown by population in the UK, France, and Germany
+ ![image](https://github.com/Eshwarreddyt/Covid19-Reporting-ETL-Azure-DataFactory-Project/blob/main/Screenshots/images/14.png)
+
+ ## Confirmed Cases Vs Total Deaths By Country
+ ![image](https://github.com/Eshwarreddyt/Covid19-Reporting-ETL-Azure-DataFactory-Project/blob/main/Screenshots/images/15.png)
+
+ ## Total Number of covid tests carried out vs Confirmed Cases
+ ![image](https://github.com/Eshwarreddyt/Covid19-Reporting-ETL-Azure-DataFactory-Project/blob/main/Screenshots/images/16.png)
+ 
  ### Dashboard Link : 
 [Power BI Dashboard Covid 19 Cases](https://app.powerbi.com/view?r=eyJrIjoiYjBhYWU0NTItMmVhOS00MGM5LTk1ZGEtMTQxZTdmZDUxMWUwIiwidCI6ImUwYjlhZTFlLWViMjYtNDZhOC1hZGYyLWQ3ZGJjZjIzNDBhOSJ9)
 
