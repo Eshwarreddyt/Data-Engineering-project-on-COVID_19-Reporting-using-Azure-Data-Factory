@@ -193,6 +193,14 @@ pyspark_notebooks/transform_population_data.py
  ### Dashboard Link : 
 [Power BI Dashboard Covid 19 Cases](https://app.powerbi.com/view?r=eyJrIjoiYjBhYWU0NTItMmVhOS00MGM5LTk1ZGEtMTQxZTdmZDUxMWUwIiwidCI6ImUwYjlhZTFlLWViMjYtNDZhOC1hZGYyLWQ3ZGJjZjIzNDBhOSJ9)
 
+### Used Technologies :
+1. Azure DataFactory
+2. Azure HDinsight (Hive)
+3. Azure Databricks (Pyspark, SparkSql)
+4. Azure Storage Account
+5. Azure Data Lake Gen2
+6. Azure SQL Database
+
 ### All the steps performed in this project are available as images in the screenshots folder in this repository. <br>
 
 
