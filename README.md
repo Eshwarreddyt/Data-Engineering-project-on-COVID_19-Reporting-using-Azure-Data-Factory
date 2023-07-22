@@ -1,8 +1,8 @@
 
 # Azure Data Factory Project on Covid-19 Reporting:
 
-- This is a Microsoft Azure Data Engineering project on COVID-19 data from 2 different sources. I loaded the dataset with the help of Azure Data Factory and then performed transformations by using ADF, HDInsight, and Databricks. When the data was processed, it was then loaded into the Azure SQL database for analysis and generating reports. All of these objectives were achieved by using ADF pipelines and event-based triggers to automate the workflows.
- I created a data platform from which our data scientists can create machine-learning models and populated the data warehouse with the subset of the data so that it can be used for reporting on trends. The data warehouse will include details about confirmed cases, unfortunate mortality rates, hospitalization and ICU cases from our weekly data lake counts, and the testing numbers. I have also built some PowerBi reports from the transformed data.
+- This is a Microsoft Azure Data Engineering project on COVID-19 data collected from 2 different sources. I loaded the dataset with the help of Azure Data Factory and then performed transformations by using ADF, HDInsight, and Databricks. When the data was processed, it was then loaded into the Azure SQL database for analysis and generating reports. All of these objectives were achieved by using ADF pipelines and event-based triggers to automate the workflows.
+- I created a data platform from which our data scientists can create machine-learning models and populated the data warehouse with the subset of the data so that it can be used for reporting on trends. The data warehouse will include details about confirmed cases, unfortunate mortality rates, hospitalization and ICU cases from our weekly data lake counts, and the testing numbers. I have also built some PowerBi reports from the transformed data.
 
 
 ### Source Data:
