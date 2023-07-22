@@ -95,7 +95,7 @@ Ingest "population by age" data for all EU Countries into the Data Lake to suppo
  ## Data Flows (1)  Cases & Deaths Data:
 
 ###  Overview: 
-![image]()
+![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/7.png)
 
 ### Steps: 
 #### 1. Cases And Deaths Source (Azure Data Lake Storage Gen2 )
@@ -109,12 +109,12 @@ Ingest "population by age" data for all EU Countries into the Data Lake to suppo
 
  ### Pipeline Overview: 
 
- ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/7.png)
+ ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/8.png)
 
  ## Data Flows (2)  Hospital Admissions Data:
  
  ###  Overview: 
-![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/8.png)
+![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/9.png)
 
 ### Steps: 
 #### 1. Hospital Admissions Source (Azure Data Lake Storage Gen2 )
@@ -152,14 +152,14 @@ Ingest "population by age" data for all EU Countries into the Data Lake to suppo
 
  ### Pipeline Overview: 
 
-![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/9.png)
+![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/10.png)
 
  ## Databricks Activity (3) -- Population File:
  
  ###  Overview: 
 
 
- ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/10.png)
+ ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/11.png)
 
 Attached File: 
 pyspark_notebooks/transform_population_data.py
@@ -174,7 +174,7 @@ pyspark_notebooks/transform_population_data.py
  3- Copy testing data   <br>
 
  Sample :  
- ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/11.png)
+ ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/12.png)
 
  ### End copy data to Azure SQL
 
@@ -186,7 +186,7 @@ pyspark_notebooks/transform_population_data.py
  4- Publish the report to Power BI Server   <br>
  5- Publish to web <br>
   ### Sample :
- ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/12.png)
+ ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/13.png)
 
  ### Dashboard Link : 
 [Power BI Dashboard Covid 19 Cases](https://app.powerbi.com/view?r=eyJrIjoiYjBhYWU0NTItMmVhOS00MGM5LTk1ZGEtMTQxZTdmZDUxMWUwIiwidCI6ImUwYjlhZTFlLWViMjYtNDZhOC1hZGYyLWQ3ZGJjZjIzNDBhOSJ9)
