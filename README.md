@@ -33,7 +33,7 @@
 
 
 # Solution Architecture Overview: 
-![image]((https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/1.png))
+![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/1.png)
 
  # Data Ingestion:
  ###  1- Population Data 
