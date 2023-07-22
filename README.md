@@ -31,7 +31,7 @@
 - Data Factory will be used as the orchestration for the HDInsight and Databricks services.  <br>
 - All the transformed data will then be stored in our Azure Data Lake storage. (GEN2)
 
-### All the steps performed in this project are available in the screenshots folder in this repository. <br>
+### All the steps performed in this project are available as images in the screenshots folder in this repository. <br>
 
 
 # Solution Architecture Overview: 
@@ -193,7 +193,7 @@ pyspark_notebooks/transform_population_data.py
  ### Dashboard Link : 
 [Power BI Dashboard Covid 19 Cases](https://app.powerbi.com/view?r=eyJrIjoiYjBhYWU0NTItMmVhOS00MGM5LTk1ZGEtMTQxZTdmZDUxMWUwIiwidCI6ImUwYjlhZTFlLWViMjYtNDZhOC1hZGYyLWQ3ZGJjZjIzNDBhOSJ9)
 
-### All the steps performed in this project are available in the screenshots folder in this repository. <br>
+### All the steps performed in this project are available as images in the screenshots folder in this repository. <br>
 
 
 <p> 
