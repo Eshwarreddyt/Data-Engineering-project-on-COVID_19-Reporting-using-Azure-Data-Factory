@@ -90,10 +90,10 @@ Ingest "population by age" data for all EU Countries into the Data Lake to suppo
  ### 2- ECDC Data 
  #### the ECDC Data Content - Four files of CSV : 
 
-##### 1. Case & Deaths Data.csv
-##### 2. Hospital Admission Data.csv
-##### 3. testing.csv
-##### 4. country_response.csv
+1. Case & Deaths Data.csv
+2. Hospital Admission Data.csv
+3. testing.csv
+4. country_response.csv
  
 ###  Overview:
 ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/4.png)
