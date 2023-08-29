@@ -198,9 +198,13 @@ Attached File:
  # Reporting via Power BI
 
  1- Create a Connection from Azure SQL to Power BI and load the data 
+ 
  2- Analyze the data to get the total confirmed cases and deaths count 
+ 
  3- Identify the trends in data based on reporting date
+ 
  4- Publish the report to Power BI Server
+ 
  5- Publish to web 
  
  ## Covid-19 Trend in the EU/EEA & UK 2020 by Cases, Deaths, Hospital Occupancy, and ICU Occupancy
