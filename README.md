@@ -34,7 +34,7 @@
 - Power BI Desktop
 - Power BI Service
 
-### All the steps performed in this project are available as images in the [Screenshots](https://github.com/Eshwarreddyt/Data-Engineering-project-on-COVID_19-Reporting-using-Azure-Data-Factory/tree/main/Screenshots)) folder in this repository.
+### All the steps performed in this project are available as images in the [Screenshots](https://github.com/Eshwarreddyt/Data-Engineering-project-on-COVID_19-Reporting-using-Azure-Data-Factory/tree/main/Screenshots) folder in this repository.
 
 ### Approach
 
@@ -81,7 +81,7 @@ Ingest "population by age" data for all EU Countries into the Data Lake to suppo
 - Execute Copy activity when the file becomes available
 - Check metadata counts before loading the data using the IF Condition
 - Finally, Load Data into our destination
-6. ScheduleTrigger
+- 6. ScheduleTrigger
 
 ###Pipeline Design:
 ![image](https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/Screenshots/images/3.png)
@@ -184,10 +184,13 @@ Attached File:
 (https://github.com/Eshwarreddyt/Azure-DataFactory-Project-Covid19-Reporting/blob/main/pyspark_notebooks/transform_population_data.py)
 
  #  Copy Data to Azure SQL
-
+ 
  1- Copy Cases and Deaths 
+ 
  2- Copy hospital admissions data
+ 
  3- Copy testing data 
+ 
 
  Sample :  
  ![4 pl_succ](https://github.com/hbuddana/Azure_Data_Factory_COVID-19_Reporting/assets/65592890/dea9e004-a556-4bc9-929a-d7239d6a9359)
