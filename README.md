@@ -1,6 +1,7 @@
 
 # ETL Azure Data Factory Project on Covid-19 Reporting:
 
+### Concept of the Project 💡
 - This project is about ingesting a couple of Covid-19 Datasets from the ECDC website, transforming them using various ADF components, and then performing transformations by using ADF, HDInsight, and Databricks, then loading them into SQL Datawarehouse for the Analytics team to derive useful and actionable insights from these datasets. We want to know the impact of Covid on the European Region as a whole during the year 2020.
 
 ### Task:
